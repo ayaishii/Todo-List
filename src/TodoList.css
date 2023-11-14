@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+body {
+  font-size: 1.6rem;
+}
+  
+input {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  font-size: 2.0rem;
+}
+
+/* Button */
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+.btn {
+border: 0;
+cursor: pointer;
+display: block;
+-webkit-appearance: none;
+appearance: none;
+outline: none;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+}
+.btn.btn-blue {
+color: #ffffff;
+background: #5555ff;
+}
+.btn-delete {
+border: 1px solid #ff5555;
+background: #fff;
+color: #ff5555;
+}
+.btn-large{
+font-size: 16px;
+padding-top: 12px;
+padding-bottom: 12px;
+width: 100%;
+}
+.btn-small{
+font-size: 14px;
+padding: 0.4rem 1.2rem;
+}
+
+.main {
+width: 80%;
+margin: 0 auto;
+text-align: left;
+}
+
+.container {
+  display: flex;
+}
+
+.todo-input {
+  width: 60rem;
+  margin-right: 40px;
+}
+
+.task-group {
+  width: 50%;
+}
+
+.todo-list {
+  margin-bottom: 2.4rem;
+  padding: 0.8rem 1.2rem;
+  background: #ffede8;
+  border-radius: 5px;
+}
+
+.done-list {
+  padding: 0.8rem 1.2rem;
+  background: #e8f4ff;
+  border-radius: 5px;
+}
+
+.todo-list li,
+.done-list li {
+  margin-bottom: 1.0rem;
+  padding: 1.2rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  }
+
+li .status {
+display: block;
+margin-bottom: 1.2rem;
+font-size: 1.4rem;
+}
